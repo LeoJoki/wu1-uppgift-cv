@@ -14,14 +14,57 @@ img {
 }
 
 .container {
+    scale: 1;
     width: min(100% - 3rem, var(--container-max, 80ch));
     margin-inline: auto;
 }
 
+.experience {
+    place-content: left;
+    font-size: 30px;
+}
+    img {
+        max-width: 100%;
+        width: "1400";
+        height: "auto";
+    }
+
+.about {
+    font-size: 30px;
+}
+    h3 {
+        font-size: 30px;
+    }
+
+.work {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background-color: rgba(219, 255, 250, 0.932);
+    margin-bottom: 3.5%;
+}
+
+.year {
+    margin-bottom: -4%;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+a:visited {
+    color: crimson;
+}
+
 .hero {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    border: 4px solid purple;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border: 4px solid red;
     display: grid;
     place-content: center;
 }
@@ -30,40 +73,42 @@ img {
         font-size: 5rem;
     }
 
-/* reset */
 .navbar > ul {
     list-style-type: none;
     margin: 0;
   }
-img {
-    max-width: 100%;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
     height: auto;
   }
   /* layout */
-:root {
+  :root {
     --layout-width: 44rem;
   }
-.navbar {
+  .navbar {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
   }
-.navbar > ul {
+  .navbar > ul {
     display: flex;
     gap: 1rem;
   }
-.navbar a {
+  .navbar a {
     text-decoration: none;
   }
-.centered-layout {
+  .centered-layout {
     max-width: min(var(--layout-width), 100vw);
     margin-inline: auto;
     padding-inline: 1rem;
   }
-.flow > * + * {
+  .flow > * + * {
     margin-top: var(--flow-space, 1em);
   }
   
-footer {
+  footer {
     margin-top: 8rem;
   }
